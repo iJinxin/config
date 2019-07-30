@@ -1,0 +1,50 @@
+{
+  // theme
+  "workbench.colorTheme": "Atom One Light",
+
+  // ============================= editor ==============================
+  // 字体大小
+  "editor.fontSize": 18,
+  // tab键对应空格数
+  "editor.tabSize": 2,
+  // 一行容纳最长字符数（wrap size）
+  "editor.wordWrapColumn": 120,
+  // 保存时格式化
+  "editor.formatOnSave": false,
+  "editor.formatOnType": false,
+
+  // ============================= eslint ==============================
+  // 设置 eslint 保存时自动修复
+  "eslint.autoFixOnSave": true,
+  // eslint 检测文件类型
+  "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      {
+          "language": "html",
+          "autoFix": true
+      },
+      {
+          "language": "vue",
+          "autoFix": false
+      }
+  ],
+  // =============================== vetur ==============================
+  // vetur 的自定义设置
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatterOptions": {
+      "js-beautify-html": {
+          "wrap_attributes": "auto",
+          "wrap_line_length": 120,
+          "end_with_newline": false
+      },
+      "prettyhtml": {
+          "singleQuote": false,
+          "wrapAttributes": false,
+          "sortAttributes": false,
+          "printWidth": 120,
+      }
+  }
+  // ================================ js ================================
+}
